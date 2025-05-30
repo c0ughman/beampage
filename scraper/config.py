@@ -53,6 +53,21 @@ PAGES = {
         
         "socialbu_account_id": 131235
     },
+"gersheps": {
+        "ig_account_name": "bulldoglovedaily",
+        "competitors": "bulldogdays","bulldogofi","blessed.english.bulldog","bulldogstuff","englishbulldog.space","englishbulldog_world","bulldog.l_o_v_e"],
+        "generic_caption": [
+            "Bulldogs are the best ever"
+        ],
+        "max_posts_to_fetch": 10,  # Number of latest posts to fetch from each competitor
+        "top_posts_count": 3,  # Number of top posts to select from each competitor
+        
+        # NEW: Total output control
+        "max_total_posts_to_schedule": 5,  # Stop when we have this many posts to schedule
+        
+        "socialbu_account_id": 131234
+    },
+
 }
 
 # API Configuration
