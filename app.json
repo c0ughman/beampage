@@ -1,0 +1,55 @@
+{
+  "name": "Beampage Instagram Content Scheduler",
+  "description": "Automated Instagram content scraping and scheduling application",
+  "repository": "https://github.com/your-username/beampage",
+  "logo": "",
+  "keywords": ["instagram", "scraper", "scheduler", "social-media", "django"],
+  "image": "heroku/python",
+  "addons": [
+    {
+      "plan": "heroku-postgresql:mini"
+    }
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": {
+      "value": "beampage.settings_heroku"
+    },
+    "SECRET_KEY": {
+      "description": "Django secret key for production",
+      "generator": "secret"
+    },
+    "DEBUG": {
+      "value": "False"
+    },
+    "APIFY_API_TOKEN": {
+      "description": "Your Apify API token for Instagram scraping",
+      "required": true
+    },
+    "SOCIALBU_API_TOKEN": {
+      "description": "Your SocialBu API token for social media posting",
+      "required": true
+    },
+    "ALLOWED_HOSTS": {
+      "description": "Comma-separated list of allowed hosts",
+      "value": "localhost,127.0.0.1"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "python manage.py migrate"
+  }
+} 

@@ -1,0 +1,92 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.staging
+.venv
+venv/
+ENV/
+env/
+
+# Heroku
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.spyderproject
+.spyproject
+
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# Project specific
+workflow_results.json
+processed_posts.json
+*.backup
+*.bak
+*.save
+test_*.py
+debug_*.py
+enhanced_workflow_example.py
+apify_client_examples.py
+example_usage.py
+
+# Logs and data files
+*.log
+*.json.backup
+*.out
+*.err
+
+# Temporary and cache files
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Security and secrets
+secrets.json
+.secrets/
+*.pem
+*.key
+config/secrets/ 
